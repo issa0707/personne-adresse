@@ -8,4 +8,9 @@ public interface PersonneManager {
 
 	public List<Personne> findAll();
 
+	public Personne findById(int id);
+	
+	public Personne create(Personne personne);
+
+
 }

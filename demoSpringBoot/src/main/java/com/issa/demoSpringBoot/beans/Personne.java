@@ -3,7 +3,6 @@ package com.issa.demoSpringBoot.beans;
 import java.util.List;
 
 import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,7 +16,6 @@ import javax.persistence.Table;
 public class Personne {
 	
 	@Id
-	//@Column(name = "id_")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 	//@Id // clé primaire

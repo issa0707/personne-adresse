@@ -9,5 +9,7 @@ import com.issa.demoSpringBoot.beans.Personne;
 public interface PersonneDao extends CrudRepository<Personne, Integer>{
 	
 	public List<Personne> findAll();
+	public Personne findById(int id);
+	public Personne save(Personne personne);
 
 }

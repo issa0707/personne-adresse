@@ -18,6 +18,16 @@ public class PersonneManagerImpl implements PersonneManager {
 	public List<Personne> findAll() {
 		return (List<Personne>) personneDao.findAll();
 	}
+
+	@Override
+	public Personne create(Personne personne) {		
+		return personneDao.save(personne);
+	}
+
+	@Override
+	public Personne findById(int id) {
+		return personneDao.findById(id);
+	}
 	
 
 }
